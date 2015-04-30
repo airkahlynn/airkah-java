@@ -3,13 +3,12 @@ import java.text.*;
 
 public class Board {  
 
-	private int numMoves;
-	
+     private int numMoves;
+      private String[] board = new String[10];
 	//Main method
     public Board()
     {
-       String[] board = new String[10];
-       numMoves = 0;
+      numMoves = 0;
     }
     
     public boolean processGuess(String guess, String code)
@@ -58,7 +57,7 @@ public class Board {
     		{
 				for (int col = 0; col < 4; col++)
 				 {
-					System.out.print(board[row][col] + " ");
+					System.out.print(board[row] + col + " ");
     		   	 }
     	    }
     	}
