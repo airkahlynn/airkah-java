@@ -3,8 +3,8 @@ import java.text.*;
 
 public class Board {  
 
-	private int numMoves;
-	
+     private int numMoves;
+     private String[] board = new String[10];
 	//Main method
     public Board()
     {
@@ -58,7 +58,7 @@ public class Board {
     		{
 				for (int col = 0; col < 4; col++)
 				 {
-					System.out.print(board[row][col] + " ");
+					System.out.print(board[row] + col + " ");
     		   	 }
     	    }
     	}
