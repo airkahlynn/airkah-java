@@ -72,8 +72,7 @@ public class Board {
     	{	
     	public String getPlayerGuess(Scanner input)
     	{	
-    		input = new Scanner(System.in);
-    	    System.out.println("Please enter your guess for the secret code or QUIT: " + input);
-    		return " ";
+    		String answer = input.nextLine();
+    		return answer;
     	}
 }//End
