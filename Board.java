@@ -3,12 +3,13 @@ import java.text.*;
 
 public class Board {  
 
-     private int numMoves;
-      private String[] board = new String[10];
+	private int numMoves;
+	private String[] board = new String[10];
+	
 	//Main method
     public Board()
     {
-      numMoves = 0;
+       numMoves = 0;
     }
     
     public boolean processGuess(String guess, String code)
@@ -17,7 +18,7 @@ public class Board {
     	String guessCopy = guess;
     	String codeCopy = code;
     	for (int pos = 0; pos < 4; pos++)
-        {
+    	{
     		if (guess.charAt(pos) == code.charAt(pos))
     		{
     			result = result + 'P';
@@ -69,10 +70,7 @@ public class Board {
     	
     	public String getPlayerGuess(Scanner input)
     	{	
-    	public String getPlayerGuess(Scanner input)
-    	{	
-    		input = new Scanner(System.in);
-    	    System.out.println("Please enter your guess for the secret code or QUIT: " + input);
-    		return " ";
+    	    String answer = input.nextLine();
+    		return answer;
     	}
-}//End
+}
