@@ -70,11 +70,10 @@ public class Board {
     	
     	public String getPlayerGuess(Scanner input)
     	{	
-Scanner sc = new Scanner(System.in);
-int i = sc.nextInt();
-/* will wait for input then assign it to the variable,
- * in this case it will wait for an int.
- */
-System.out.println(i);
+    	public String getPlayerGuess(Scanner input)
+    	{	
+    		input = new Scanner(System.in);
+    	    System.out.println("Please enter your guess for the secret code or QUIT: " + input);
+    		return " ";
     	}
 }//End
